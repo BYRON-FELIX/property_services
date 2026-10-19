@@ -2,10 +2,26 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
   const services = [
-    ["01", "Electrical", "Installations, repairs and fault diagnosis"],
-    ["02", "Plumbing", "Repairs, installations and maintenance"],
-    ["03", "HVAC", "Air conditioning and ventilation systems"],
-    ["04", "Security", "CCTV, access control and electric fencing"],
+    [
+      "01",
+      "MEP Core Services",
+      "Essential building systems that keep properties safe, functional and operating efficiently.",
+    ],
+    [
+      "02",
+      "Civil & Architectural Finishing Works",
+      "Professional finishing, repair and building works that maintain the appearance, comfort and integrity of your property.",
+    ],
+    [
+      "03",
+      "Security, ICT & Smart Systems",
+      "Modern security, communication, networking and automation solutions for residential and commercial properties.",
+    ],
+    [
+      "04",
+      "Contracts, Estate & Specialized Support",
+      "Reliable ongoing maintenance and specialized services designed for estates, apartments and managed properties.",
+    ],
   ];
 
   return (
@@ -16,19 +32,20 @@ function Home() {
         style={{
           backgroundImage:
             "url('https://www.expertech.co.ke/assets/uploads/media-uploader/hvac-installer1760339673.png')",
+          filter: "brightness(1.12) contrast(1.08) saturate(1.08)",
         }}
       >
         {/* Image overlays */}
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080909]/95 via-[#080909]/60 to-[#080909]/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080909]/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080909]/75 via-[#080909]/45 to-[#080909]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080909]/55 via-transparent to-transparent" />
 
         <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col px-5 sm:px-8">
           <div className="flex flex-1 items-center py-32">
             <div className="max-w-3xl">
               <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/[0.13] px-4 py-2 text-sm text-white/80 shadow-xl backdrop-blur-2xl">
                 <span className="h-2 w-2 rounded-full bg-[#c9a66b]" />
-                Property Technical Services
+                Alsabilink Facilities and Maintenance
               </div>
 
               <h1 className="text-5xl font-semibold leading-[1.02] tracking-[-0.03em] sm:text-6xl lg:text-7xl">
@@ -61,21 +78,23 @@ function Home() {
                 </NavLink>
               </div>
 
-              <div className="mt-12 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
+              <div className="mt-12 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {services.map(([number, title, description]) => (
                   <div
                     key={title}
-                    className="group rounded-2xl border border-white/20 bg-white/[0.13] p-4 shadow-[0_12px_40px_rgba(0,0,0,0.25)] backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/[0.18]"
+                    className="group flex min-h-[220px] flex-col justify-between rounded-2xl border border-white/20 bg-white/[0.13] p-4 shadow-[0_12px_40px_rgba(0,0,0,0.25)] backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/[0.18]"
                   >
-                    <div className="text-xs tracking-widest text-[#c9a66b]">
-                      {number}
+                    <div>
+                      <div className="text-[10px] tracking-[0.25em] text-[#c9a66b]">
+                        {number}
+                      </div>
+
+                      <div className="mt-3 text-sm font-semibold leading-5 text-white">
+                        {title}
+                      </div>
                     </div>
 
-                    <div className="mt-3 text-sm font-semibold">
-                      {title}
-                    </div>
-
-                    <div className="mt-2 hidden text-xs leading-5 text-white/55 sm:block">
+                    <div className="mt-4 text-[11px] leading-5 text-white/70">
                       {description}
                     </div>
                   </div>
@@ -105,17 +124,17 @@ function Home() {
               PROPERTY MAINTENANCE
             </div>
 
-            <h2 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
+            <h2 className="mt-5 text-4xl font-semibold leading-tight text-white sm:text-5xl">
               One reliable partner
               <br />
-              <span className="text-white/40">
+              <span className="text-white/80">
                 for your property.
               </span>
             </h2>
           </div>
 
           <div>
-            <p className="text-base leading-8 text-white/55 sm:text-lg">
+            <p className="text-base leading-8 text-white/75 sm:text-lg">
               We provide professional technical maintenance and repair
               services designed to keep properties safe, functional and
               operating efficiently.

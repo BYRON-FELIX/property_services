@@ -41,13 +41,13 @@ function About() {
               ABOUT US
             </div>
 
-            <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] text-white sm:text-6xl lg:text-7xl">
               Keeping properties
               <br />
-              <span className="text-white/40">working at their best.</span>
+              <span className="text-white/80">working at their best.</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/55 sm:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
               We provide professional technical maintenance and property
               support services designed to keep buildings safe, functional,
               comfortable and well maintained.
@@ -65,16 +65,16 @@ function About() {
               WHO WE ARE
             </div>
 
-            <h2 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
+            <h2 className="mt-5 text-4xl font-semibold leading-tight text-white sm:text-5xl">
               One partner for
               <br />
-              <span className="text-white/40">technical property care.</span>
+              <span className="text-white/80">technical property care.</span>
             </h2>
           </div>
 
-          <div className="space-y-6 text-base leading-8 text-white/55 sm:text-lg">
+          <div className="space-y-6 text-base leading-8 text-white/70 sm:text-lg">
             <p>
-              We are a property technical services company focused on
+              We are an Alsabilink Facilities and Maintenance company focused on
               maintenance, repairs and technical support for residential,
               commercial and institutional properties across Kenya.
             </p>
@@ -104,13 +104,13 @@ function About() {
               WHAT WE DO
             </div>
 
-            <h2 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
+            <h2 className="mt-5 text-4xl font-semibold leading-tight text-white sm:text-5xl">
               Technical expertise
               <br />
-              <span className="text-white/40">across the property lifecycle.</span>
+              <span className="text-white/80">across the property lifecycle.</span>
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-white/50 sm:text-lg">
+            <p className="mt-6 text-base leading-8 text-white/70 sm:text-lg">
               Property maintenance involves more than fixing problems when
               they occur. Our approach brings together preventive maintenance,
               repairs, installations and specialized technical support to help
@@ -151,13 +151,13 @@ function About() {
               WHO WE SERVE
             </div>
 
-            <h2 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
+            <h2 className="mt-5 text-4xl font-semibold leading-tight text-white sm:text-5xl">
               Built around
               <br />
-              <span className="text-white/40">your property.</span>
+              <span className="text-white/80">your property.</span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-base leading-8 text-white/50">
+            <p className="mt-6 max-w-xl text-base leading-8 text-white/70">
               Our services can support properties at different scales, from
               individual residential developments to larger managed
               facilities.
@@ -214,7 +214,7 @@ function About() {
                   {strength.title}
                 </h3>
 
-                <p className="mt-4 max-w-lg text-sm leading-7 text-white/45">
+                <p className="mt-4 max-w-lg text-sm leading-7 text-white/65">
                   {strength.description}
                 </p>
               </div>
@@ -235,7 +235,7 @@ function About() {
               Need reliable technical support?
             </h2>
 
-            <p className="mt-4 max-w-xl text-sm leading-7 text-white/50">
+            <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
               Tell us what your property needs and our team will help
               coordinate the appropriate technical service.
             </p>

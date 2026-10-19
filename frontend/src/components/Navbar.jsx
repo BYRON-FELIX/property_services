@@ -28,11 +28,11 @@ function Navbar() {
               className="shrink-0"
             >
               <div className="text-lg font-semibold tracking-wide text-white">
-                PROPERTY<span className="text-[#c9a66b]">TECH</span>
+                <span className="text-[#c9a66b]">ALSABILINK</span>
               </div>
 
               <div className="mt-0.5 text-[8px] tracking-[0.3em] text-white/40 sm:text-[9px]">
-                TECHNICAL SERVICES
+                FACILITIES AND MAINTENANCE
               </div>
             </NavLink>
 

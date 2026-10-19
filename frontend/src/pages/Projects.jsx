@@ -65,13 +65,13 @@ function Projects() {
               PROJECTS & EXPERIENCE
             </div>
 
-            <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] text-white sm:text-6xl lg:text-7xl">
               Technical work
               <br />
-              <span className="text-white/40">that keeps properties moving.</span>
+              <span className="text-white/80">that keeps properties moving.</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/55 sm:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
               Explore the types of technical maintenance, repair and property
               support work our team is equipped to deliver across Kenya.
             </p>
@@ -107,7 +107,7 @@ function Projects() {
                 <div className="p-6 sm:p-7">
                   <h2 className="text-xl font-semibold">{project.title}</h2>
 
-                  <p className="mt-3 text-sm leading-7 text-white/45">
+                  <p className="mt-3 text-sm leading-7 text-white/65">
                     {project.description}
                   </p>
 
@@ -135,7 +135,7 @@ function Projects() {
                 Let's discuss what your property needs.
               </h2>
 
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/45">
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/70">
                 From individual repairs to ongoing technical maintenance,
                 submit a request and our team can review your requirements.
               </p>

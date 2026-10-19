@@ -18,12 +18,12 @@ function Footer() {
           {/* Brand */}
           <div>
             <NavLink to="/" className="inline-block">
-              <div className="text-2xl font-semibold tracking-wide">
-                PROPERTY<span className="text-[#c9a66b]">TECH</span>
+              <div className="text-2xl font-semibold tracking-wide text-[#c9a66b]">
+                ALSABILINK
               </div>
 
               <div className="mt-1 text-[9px] tracking-[0.3em] text-white/35">
-                TECHNICAL SERVICES
+                FACILITIES AND MAINTENANCE
               </div>
             </NavLink>
 
@@ -126,7 +126,7 @@ function Footer() {
                 </div>
 
                 <div className="mt-2 break-all text-sm text-white/60">
-                  info@propertytech.co.ke
+                  info@alsabilink.co.ke
                 </div>
               </div>
 
@@ -153,7 +153,7 @@ function Footer() {
         {/* Bottom */}
         <div className="mt-16 flex flex-col gap-5 border-t border-white/10 pt-6 text-xs text-white/25 sm:flex-row sm:items-center sm:justify-between">
           <span>
-            © {new Date().getFullYear()} PROPERTYTECH. All rights reserved.
+            © {new Date().getFullYear()} ALSABILINK FACILITIES AND MAINTENANCE. All rights reserved.
           </span>
 
           <div className="flex flex-wrap gap-x-5 gap-y-2 tracking-wide">

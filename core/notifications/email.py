@@ -24,7 +24,7 @@ Our team is reviewing your request and will notify you once a technician has bee
 Please keep your request ID for reference.
 
 Regards,
-Property Technical Services
+Alsabilink Facilities and Maintenance
 """
 
     company_message = f"""

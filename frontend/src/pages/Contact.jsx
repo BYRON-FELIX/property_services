@@ -14,13 +14,13 @@ function Contact() {
               CONTACT US
             </div>
 
-            <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] text-white sm:text-6xl lg:text-7xl">
               Let's keep your
               <br />
-              <span className="text-white/40">property running.</span>
+              <span className="text-white/80">property running.</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/55 sm:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
               Have a maintenance issue, technical requirement or property
               project? Get in touch with our team and tell us what you need.
             </p>
@@ -42,7 +42,7 @@ function Contact() {
               Speak with our team.
             </h2>
 
-            <p className="mt-5 max-w-md text-sm leading-7 text-white/45">
+            <p className="mt-5 max-w-md text-sm leading-7 text-white/70">
               For service requests, technical enquiries or property
               maintenance support, contact us using the details below.
             </p>
@@ -62,7 +62,7 @@ function Contact() {
                   EMAIL
                 </div>
                 <div className="mt-2 text-white/75">
-                  info@propertytech.co.ke
+                  info@alsabilink.co.ke
                 </div>
               </div>
 
@@ -90,7 +90,7 @@ function Contact() {
                 EMERGENCY SUPPORT
               </div>
 
-              <p className="mt-3 text-sm leading-6 text-white/50">
+              <p className="mt-3 text-sm leading-6 text-white/70">
                 Emergency technical support can be coordinated depending on
                 the service requirement and availability.
               </p>
@@ -210,7 +210,7 @@ function Contact() {
               Submit a service request directly.
             </h2>
 
-            <p className="mt-4 max-w-xl text-sm leading-7 text-white/45">
+            <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
               For maintenance and repair requests, use our dedicated service
               request form so we can capture the details properly.
             </p>
