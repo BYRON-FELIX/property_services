@@ -116,7 +116,7 @@ function Footer() {
                 </div>
 
                 <div className="mt-2 text-sm text-white/60">
-                  +254 XXX XXX XXX
+                  +254794572834
                 </div>
               </div>
 
@@ -126,7 +126,7 @@ function Footer() {
                 </div>
 
                 <div className="mt-2 break-all text-sm text-white/60">
-                  info@alsabilink.co.ke
+                  alsabilinks@gmail.com
                 </div>
               </div>
 
@@ -153,7 +153,7 @@ function Footer() {
         {/* Bottom */}
         <div className="mt-16 flex flex-col gap-5 border-t border-white/10 pt-6 text-xs text-white/25 sm:flex-row sm:items-center sm:justify-between">
           <span>
-            © {new Date().getFullYear()} ALSABILINK FACILITIES AND MAINTENANCE. All rights reserved.
+            © 2020 ALSABILINK FACILITIES AND MAINTENANCE. All rights reserved.
           </span>
 
           <div className="flex flex-wrap gap-x-5 gap-y-2 tracking-wide">

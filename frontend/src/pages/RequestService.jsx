@@ -457,7 +457,7 @@ function RequestService() {
               </p>
 
               <div className="mt-4 text-sm font-medium text-[#c9a66b]">
-                +254 XXX XXX XXX
+                +254794572834
               </div>
             </div>
           </aside>

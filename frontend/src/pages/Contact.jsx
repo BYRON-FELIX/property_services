@@ -53,7 +53,7 @@ function Contact() {
                   PHONE
                 </div>
                 <div className="mt-2 text-white/75">
-                  +254 XXX XXX XXX
+                  +254794572834
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ function Contact() {
                   EMAIL
                 </div>
                 <div className="mt-2 text-white/75">
-                  info@alsabilink.co.ke
+                  alsabilinks@gmail.com
                 </div>
               </div>
 
