@@ -1,56 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useProjectData from "./useProjectData";
 
 function Projects() {
-  const projects = [
-    {
-      category: "Residential & Apartments",
-      title: "Apartment Property Maintenance",
-      description:
-        "Technical maintenance and repair support for residential apartment properties.",
-      image:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85",
-    },
-    {
-      category: "Electrical & Power",
-      title: "Electrical Systems & Backup Power",
-      description:
-        "Electrical maintenance, lighting upgrades and power backup solutions for managed properties.",
-      image:
-        "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=85",
-    },
-    {
-      category: "HVAC & Mechanical",
-      title: "HVAC & Building Systems",
-      description:
-        "Installation, servicing and maintenance of essential mechanical and cooling systems.",
-      image:
-        "https://images.unsplash.com/photo-1631545806609-5c4d6d5a3e2f?auto=format&fit=crop&w=1200&q=85",
-    },
-    {
-      category: "Security & ICT",
-      title: "Property Security & Connectivity",
-      description:
-        "CCTV, access control, networking and technical infrastructure for secure properties.",
-      image:
-        "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1200&q=85",
-    },
-    {
-      category: "Plumbing & Water Systems",
-      title: "Plumbing & Water Infrastructure",
-      description:
-        "Plumbing repairs, water systems, pumps and drainage maintenance.",
-      image:
-        "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=85",
-    },
-    {
-      category: "General Maintenance",
-      title: "Property Repair & Finishing",
-      description:
-        "General building repairs, finishing works and ongoing property maintenance.",
-      image:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85",
-    },
-  ];
+  const { data: categories, error } = useProjectData("/api/project-categories/");
 
   return (
     <main className="bg-[#080909] text-white">
@@ -82,41 +34,48 @@ function Projects() {
       {/* Projects */}
       <section className="px-5 py-20 sm:px-8 lg:py-28">
         <div className="mx-auto max-w-7xl">
+          {error && <p role="alert">Project categories are temporarily unavailable.</p>}
+          {!error && !categories && <p role="status">Loading project categories?</p>}
+          {categories?.length === 0 && <p>No project categories are available yet.</p>}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <article
-                key={project.title}
-                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition duration-500 hover:-translate-y-1 hover:border-[#c9a66b]/30"
+            {categories?.map((category) => (
+              <Link
+                key={category.slug}
+                to={`/projects/${category.slug}`}
+                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition duration-500 hover:-translate-y-1 hover:border-[#c9a66b]/30 focus-visible:outline-2 focus-visible:outline-[#c9a66b]"
               >
                 {/* Image */}
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
+                  {category.cover_url && (
+                    <img
+                      src={category.cover_url}
+                      alt=""
+                      loading="lazy"
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    />
+                  )}
 
                   <div className="absolute inset-0 bg-gradient-to-t from-[#080909] via-[#080909]/10 to-transparent" />
 
                   <div className="absolute bottom-4 left-4 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[10px] tracking-[0.15em] text-white/75 backdrop-blur-xl">
-                    {project.category.toUpperCase()}
+                    {category.name.toUpperCase()}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6 sm:p-7">
-                  <h2 className="text-xl font-semibold">{project.title}</h2>
+                  <h2 className="text-xl font-semibold">{category.title}</h2>
 
                   <p className="mt-3 text-sm leading-7 text-white/65">
-                    {project.description}
+                    {category.description}
                   </p>
 
                   <div className="mt-6 flex items-center gap-3 text-xs font-medium tracking-wide text-[#c9a66b]">
-                    TECHNICAL SERVICES
+                    View projects
                     <span className="h-px w-8 bg-[#c9a66b]/50" />
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

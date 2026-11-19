@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     # Local apps
     "core",
+    "project_gallery",
 ]
 
 
@@ -103,6 +104,8 @@ USE_TZ = True
 
 
 STATIC_URL = "static/"
+MEDIA_ROOT = Path(os.getenv("MEDIA_ROOT", str(BASE_DIR / "media")))
+MEDIA_URL = "/api/project-media/"
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

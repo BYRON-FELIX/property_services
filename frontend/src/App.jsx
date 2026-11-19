@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import ProjectCategory from "./pages/ProjectCategory";
 import Contact from "./pages/Contact";
 import RequestService from "./pages/RequestService";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectCategory />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/request-service" element={<RequestService />} />
         </Routes>
